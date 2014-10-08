@@ -1,0 +1,13 @@
+{
+  "rabbitmq": {
+    "ssl": {
+	  "private_key_file": "/<%= @installdir %>/sensu/ssl/key.pem",
+	  "cert_chain_file": "/<%= @installdir %>/sensu/ssl/cert.pem"
+	},
+	"port": <%= @rabbitmq_port %>,
+	"host": "<%= @rabbitmq_server %>",
+	"user": "<%= @rabbitmq_username %>",
+	"password": "<%= @rabbitmq_password %>",
+	"vhost": "<%= @rabbitmq_vhost %>"
+  }
+}
